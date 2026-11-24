@@ -1,0 +1,8 @@
+item,price,regular_price,source_url,seen_on,expires_on,wishlist
+Example 4-bay NAS,527.99,729.99,https://example.com/nas,2026-11-23,2026-11-30,yes
+Example mechanical keyboard,65.00,140.00,https://example.com/keyboard,2026-11-24,,no
+Example USB-C cable,8.99,9.99,https://example.com/cable,2026-11-24,,no
+Example monitor arm,89.00,119.00,https://example.com/arm,2026-11-10,2026-11-15,no
+Example headphones,249.00,349.00,https://example.com/headphones,2026-11-12,,no
+Example power station,850.00,1500.00,,2026-11-24,,no
+Example desk lamp,,59.00,https://example.com/lamp,2026-11-24,,no
