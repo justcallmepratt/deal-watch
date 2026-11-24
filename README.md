@@ -45,6 +45,13 @@ The cable in the example saves a dollar, so it stays on the sheet and sends noth
 
 Python 3.10 or later, standard library only.
 
+## Set up with Claude
+
+Open this folder in Claude Code and say **"Follow PROMPT.md."** [`PROMPT.md`](PROMPT.md) has Claude
+ask what you plan to buy, fill in your profile from [`profile.example.md`](profile.example.md), make
+the sheet, and schedule one run per sale. It asks before creating any task and tests the first
+run with `dealwatch.py`.
+
 ## How we solved it
 
 | Problem | What we did |
