@@ -41,3 +41,5 @@ in the row: reliability surveys and long-term tests, recalls in the last five ye
 - Poor record, an open recall or a known defect: do not list it.
 
 Never invent a rating. If nothing independent was found, write "reliability not checked".
+
+`dealwatch.py` enforces both rules on the sheet: see the README's "Columns" section.
