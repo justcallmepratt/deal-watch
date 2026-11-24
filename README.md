@@ -106,6 +106,24 @@ Looking at three generations of the same laptop line: a fall launch got its firs
 next big drop only came when a successor launched. Three generations from deal coverage is a small
 sample, not a price-tracker dataset.
 
+## Alternatives
+
+Open-source tools I looked at in November 2026. None of them picks deals from a wishlist or checks
+the maker's reliability record. Each one watches product links you give it.
+
+| Project | Licence | Overlap | Differs from Deal Watch |
+|---|---|---|---|
+| [PriceBuddy](https://github.com/jez500/pricebuddy) | GPL-3.0 | Closest match: price history, target-price and %-drop alerts, cross-store comparison, REST API, CLI and MCP server | Scrapes store pages; no deal end dates or stale-price rule |
+| [changedetection.io](https://github.com/dgtlmoon/changedetection.io) | Apache-2.0 | Mature page-change watcher with price graphs, $ and % thresholds, many notification channels | General-purpose; supports proxies for blocked sites |
+| [Discount Bandit](https://github.com/Cybrarist/Discount-Bandit) | none found | Rich alert rules, such as "lowest in X days" and "official sellers only" | No licence file, so not reusable as-is |
+| [Huginn](https://github.com/huginn/huginn) | MIT | General scheduled-agent platform that can watch for deals | All price logic would have to be built on top |
+
+Ideas worth taking: a "lowest in X days" alert once prices are stored, accepting a price only when
+two ways of reading it agree, and [Apprise](https://github.com/caronc/apprise) for notifications.
+For the collector, the Best Buy Products API (it returns regular and sale prices), the Keepa API
+(paid, Amazon history) and the Amazon Creators API are candidates. Each one's terms on storing
+prices need checking first; Best Buy's limit caching.
+
 ## What's next
 
 1. Replace the agent collector with a scheduled Spring Boot job that reads from sources with an API.
