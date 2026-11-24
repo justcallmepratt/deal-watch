@@ -21,8 +21,9 @@ Copy `profile.example.md` to `profile.md` and fill it in. `profile.md` is git-ig
 details out of anything committed.
 
 **2. Make the sheet.** Create one sheet (or a CSV, if no sheet tool is available) with these
-columns, in this order: `item, price, regular_price, source_url, seen_on, expires_on, wishlist`,
-plus any notes columns they want. Dates are `YYYY-MM-DD`. One tab per sale.
+columns, in this order: `item, price, regular_price, source_url, seen_on, expires_on, wishlist,
+reliability, built_to_last, built_to_last_why, other_price`, plus any notes columns they want.
+The last four are explained in the README's "Columns" section. Dates are `YYYY-MM-DD`. One tab per sale.
 
 **3. Schedule the runs.** For each sale, fill in the placeholders in `prompts/sale-run.md` and show
 the finished prompt and the schedule (default: every 3 hours during the sale) before creating it.

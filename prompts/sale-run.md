@@ -24,6 +24,10 @@ a product. A separate task tracks the one big purchase, so skip it here.
 3. Write to the sheet:
    - Add at most 8 new deals per run, newest first, each with the price, the regular price,
      the link where the price was read and the time it was found.
+   - Fill `reliability` with a note that starts with `good`, `mixed`, `poor`, `recall` or `defect`,
+     then the source, or leave it blank if nothing independent was found.
+   - Set `built_to_last` to `yes` only with a reason in `built_to_last_why`.
+   - If a second source shows a different price, put it in `other_price`.
    - If a recorded deal has a new price, change the price and note the old one.
    - If a recorded deal has ended, remove the row.
 4. Notify only when something notable happened: a wishlist item got a deal, a new pick saves
